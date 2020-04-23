@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+.jumbotron {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: blank;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+}
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+}
+
+.toast-error {
+  width: 345px;
+  height: 98px;
+  border-radius: 5px;
+  background-color: #d8203b;
+  background-image: none !important;
+}
+
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/check.svg */
+
+.toast-title {
+  width: 150px;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.toast-message {
+  width: 305px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+html,
+body {
+  background-color: #f2f7fa;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.screen-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-logo {
+  height: 62px;
+  width: 302px;
+}
