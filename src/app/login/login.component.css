@@ -1,11 +1,23 @@
 .screen-container {
   height: 100%;
+  /* padding: 30px 10%; */
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .login-logo {
+  margin: 60px;
   height: 62px;
+  max-width: 100%;
   width: 302px;
+}
+
+.login-form {
+  margin: 0 10%;
+  background-color: crimson;
+  margin-top: 83px;
+  height: 1200px;
+  align-self: stretch;
+  max-width: 100%;
 }
