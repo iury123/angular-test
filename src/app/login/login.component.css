@@ -1,36 +1,66 @@
 .screen-container {
-  min-height: calc(100% - 30px);
-  /* width: 100%; */
-  /* padding: 30px 0; */
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
+  min-height: calc(100vh - 6.7vh - 30px);
+  padding: 6.7vh 24.3vw 30px;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .login-logo {
-  margin-top: 60px;
-  height: 62px;
+  height: 70px;
+  width: 350px;
   max-width: 100%;
-  width: 302px;
 }
 
-.login-form {
-  background-color: crimson;
-  margin: 16px 10%;
+.login-form-container {
+  background-color: white;
+  margin-top: 8.1vh;
+  padding: 80px 14.1vw;
   align-self: stretch;
   max-width: 100%;
 }
 
-.aaa {
-  margin: 10px;
-  background-color: darkblue;
-  height: 130px;
+@media screen and (max-width: 700px) {
+  .screen-container {
+    min-height: calc(100vh - 80px);
+    padding: 50px 20px 30px;
+  }
+
+  .login-form-container {
+    padding: 80px 10px;
+  }
 }
 
-.footer {
-  height: 50px;
-  width: 100%;
-  background-color: black;
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .screen-container {
+    min-height: calc(100vh - 6.7vh - 30px);
+    padding: 6.7vh 16.3vw 30px;
+  }
+
+  .login-form-container {
+    margin-top: 8.1vh;
+    padding: 80px 14.1vw;
+  }
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+button.btn.btn-block.btn-danger.btn-lg {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  align-self: center;
+}
+
+::placeholder {
+  width: 97px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #58595b;
 }
