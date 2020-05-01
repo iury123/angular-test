@@ -7,7 +7,10 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent, children: [
       {
-        path: 'management', component: ManagementComponent
+        path: 'management', loadChildren: () => import('../management/management.module').then(m => m.ManagementModule)
+      },
+      {
+        path: 'onu-ids', loadChildren: () => import('../onu-ids/onu-ids.module').then(m => m.OnuIdsModule)
       }
     ]
   },
