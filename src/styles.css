@@ -97,6 +97,11 @@ body {
   font-weight: normal !important;
 }
 
+label {
+  font-weight: 300 !important;
+  margin-bottom: 0;
+}
+
 .text-field {
   height: 55px;
   border-radius: 5px;

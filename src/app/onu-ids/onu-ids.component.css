@@ -1,0 +1,39 @@
+.component-container {
+  padding: 60px 7vw 44px;
+  align-items: stretch;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #58595b;
+}
+
+.select-widget {
+  width: 23.3vw;
+  min-width: 200px;
+  height: 55px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.select-placeholder {
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a09fa0;
+}
