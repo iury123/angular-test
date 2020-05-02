@@ -3,6 +3,14 @@
   min-width: 200px;
 }
 
+.options-container {
+  z-index: 100;
+  position: absolute;
+  margin-top: 63px;
+  width: 23.3vw;
+  min-width: 200px;
+}
+
 .select-box .options-container {
   max-height: 0;
   opacity: 0;
@@ -26,6 +34,17 @@
   margin-bottom: 8px;
   position: relative;
   order: 0;
+}
+
+.selected label {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a09fa0;
 }
 
 .selected img {
