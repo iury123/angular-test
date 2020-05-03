@@ -37,3 +37,45 @@
   letter-spacing: normal;
   color: #a09fa0;
 }
+
+.data-menu {
+  background-color: white;
+  padding: 34px 2.3vw;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.data-menu .row-widget {
+  align-items: center;
+}
+
+.data-menu > * {
+  margin: 0 10px;
+}
+
+.data-menu .row-widget img {
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
+
+.data-menu .row-widget label {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #58595b;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.list-container {
+  background-color: white;
+  height: 600px;
+  margin-top: 40px;
+}

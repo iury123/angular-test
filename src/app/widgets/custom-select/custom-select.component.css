@@ -93,10 +93,6 @@
   cursor: pointer;
 }
 
-.select-box .option .radio {
-  display: none;
-}
-
 .oval {
   width: 34px;
   height: 21px;
