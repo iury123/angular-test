@@ -1,53 +1,23 @@
 <div class="column-widget select-box">
   <div class="options-container" [class.active]="isOpen">
-    <div class="option">
-      <input type="radio" class="radio" id="automobiles" name="category" />
-      <label for="automobiles">Automobiles</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="film" name="category" />
-      <label for="film">Film & Animation</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="science" name="category" />
-      <label for="science">Science & Technology</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="art" name="category" />
-      <label for="art">Art</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="music" name="category" />
-      <label for="music">Music</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="travel" name="category" />
-      <label for="travel">Travel & Events</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="sports" name="category" />
-      <label for="sports">Sports</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="news" name="category" />
-      <label for="news">News & Politics</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="tutorials" name="category" />
-      <label for="tutorials">Tutorials</label>
+    <div
+      class="option"
+      *ngFor="let status of onuStatus | keyvalue: compareTo"
+      (click)="onSelect(status.value)"
+    >
+      <div class="row-widget">
+        <div class="oval" [ngClass]="onuStatusCssClass[status.value]"></div>
+        <label>{{ onuStatusText[status.value] }}</label>
+      </div>
     </div>
   </div>
 
   <div class="row-widget selected" (click)="toggle()">
-    <label>Filtrar por</label>
+    <label *ngIf="selectedOption === undefined">Filtrar por</label>
+    <div class="row-widget" *ngIf="selectedOption >= 0">
+      <div class="oval" [ngClass]="onuStatusCssClass[selectedOption]"></div>
+      <label>{{ onuStatusText[selectedOption] }}</label>
+    </div>
     <img src="../../../assets/arrow-down.svg" />
   </div>
 </div>

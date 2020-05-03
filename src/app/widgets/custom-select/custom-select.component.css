@@ -9,6 +9,7 @@
   margin-top: 63px;
   width: 23.3vw;
   min-width: 200px;
+  padding: 22px 2.36vw;
 }
 
 .select-box .options-container {
@@ -24,6 +25,7 @@
 
 .selected {
   padding: 17px 1vw;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
@@ -63,7 +65,7 @@
 .select-box .options-container.active {
   max-height: 240px;
   opacity: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .select-box .options-container::-webkit-scrollbar {
@@ -78,12 +80,12 @@
 }
 
 .select-box .option {
-  padding: 12px 24px;
+  padding: 12px 0px;
   cursor: pointer;
 }
 
 .select-box .option:hover {
-  background-color: silver;
+  background-color: rgb(230, 230, 230);
 }
 
 .select-box label {
@@ -93,4 +95,41 @@
 
 .select-box .option .radio {
   display: none;
+}
+
+.oval {
+  width: 34px;
+  height: 21px;
+  border-radius: 10.5px;
+  margin-right: 5px;
+}
+
+.red-oval {
+  background-color: #d8203b;
+}
+
+.green-oval {
+  background-color: #45c600;
+}
+
+.blue-oval {
+  background-color: #1572bb;
+}
+
+.grey-oval {
+  background-color: #a09fa0;
+}
+
+.selected .row-widget {
+  align-items: center;
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.selected .row-widget label {
+  font-size: 18px;
+  color: #58595b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

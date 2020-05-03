@@ -12,4 +12,8 @@ export class OnuIdsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSelect(value) {
+    console.log('Evento' + value);
+  }
+
 }
